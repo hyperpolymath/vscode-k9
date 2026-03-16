@@ -1,0 +1,94 @@
+{
+  "name": "vscode-k9",
+  "displayName": "K9 - Contractile Validator Language",
+  "description": "Syntax highlighting, language configuration, and snippets for K9 (.k9) and K9 Nickel (.k9.ncl) files",
+  "version": "0.1.0",
+  "publisher": "hyperpolymath",
+  "author": {
+    "name": "Jonathan D.A. Jewell",
+    "email": "j.d.a.jewell@open.ac.uk"
+  },
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hyperpolymath/vscode-k9"
+  },
+  "bugs": {
+    "url": "https://github.com/hyperpolymath/vscode-k9/issues"
+  },
+  "homepage": "https://github.com/hyperpolymath/vscode-k9#readme",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "k9",
+    "contractile",
+    "nickel",
+    "syntax-highlighting",
+    "validator"
+  ],
+  "icon": "icons/k9-icon.png",
+  "galleryBanner": {
+    "color": "#1e2e1e",
+    "theme": "dark"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "k9",
+        "aliases": [
+          "K9",
+          "K9 Kennel"
+        ],
+        "extensions": [
+          ".k9"
+        ],
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./icons/k9-icon.svg",
+          "dark": "./icons/k9-icon.svg"
+        }
+      },
+      {
+        "id": "k9-nickel",
+        "aliases": [
+          "K9 Nickel",
+          "K9 Yard/Hunt"
+        ],
+        "extensions": [
+          ".k9.ncl"
+        ],
+        "configuration": "./language-configuration-nickel.json",
+        "icon": {
+          "light": "./icons/k9-icon.svg",
+          "dark": "./icons/k9-icon.svg"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "k9",
+        "scopeName": "source.k9",
+        "path": "./syntaxes/k9.tmLanguage.json"
+      },
+      {
+        "language": "k9-nickel",
+        "scopeName": "source.k9.ncl",
+        "path": "./syntaxes/k9-nickel.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "k9",
+        "path": "./snippets/k9.json"
+      },
+      {
+        "language": "k9-nickel",
+        "path": "./snippets/k9-nickel.json"
+      }
+    ]
+  }
+}
