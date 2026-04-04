@@ -30,3 +30,19 @@
 ```bash
 cd /var/mnt/eclipse/repos/vscode-k9 && npm test
 ```
+
+## Session 9 additions (2026-04-04)
+
+### What Was Added
+
+| Area | Tests Added | Location |
+|------|-------------|----------|
+| E2E tests | 6 sections: extension files, package.json manifest fields, TextMate grammar JSON validity, snippets body/prefix structure, language-configuration JSON, grammar–manifest path consistency | `tests/e2e.sh` |
+| CI runner | GitHub Actions workflow for E2E suite | `.github/workflows/e2e.yml` |
+
+### Updated Test Counts
+
+| Suite | Count | Status |
+|-------|-------|--------|
+| E2E (shell-based) | 6 test sections | All passing |
+| CI workflows | 21 | Running tests on GitHub Actions |
