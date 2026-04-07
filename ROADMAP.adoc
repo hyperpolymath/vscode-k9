@@ -1,16 +1,21 @@
 // SPDX-License-Identifier: PMPL-1.0-or-later
-= Vscode K9 Roadmap
+= vscode-k9 Roadmap
 
 == Current Status
 
-Initial development phase.
+Extension work is in pre-publication state.
 
 == Milestones
 
 === v0.1.0 - Foundation
-* [ ] Core functionality
-* [ ] Basic documentation
-* [ ] CI/CD pipeline
+* [ ] Core functionality validation
+* [ ] Basic documentation pass
+* [ ] CI/CD baseline
+
+=== v0.1.1 - Marketplace Publication
+* [ ] Acquire Azure DevOps Marketplace PAT for publisher account
+* [ ] Run `vsce package` and final metadata verification
+* [ ] Publish with `vsce publish`
 
 === v1.0.0 - Stable Release
 * [ ] Full feature set
@@ -19,4 +24,4 @@ Initial development phase.
 
 == Future Directions
 
-_To be determined based on community feedback._
+Track post-publication telemetry and compatibility feedback to drive v1.x planning.
